@@ -1,0 +1,44 @@
+[gd_resource type="TileSet" format=3 uid="uid://ci5geesrgftxc"]
+
+[ext_resource type="Texture2D" uid="uid://b2j3d21hjpyrn" path="res://sprites/enviroment/desert_sprites.png" id="1_vhgqb"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jcm55"]
+texture = ExtResource("1_vhgqb")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.5, -16.5, -1.2745247, -1.9117851, 16.5, 16.5, -16.5, 16.5)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.31863022, -0.31863022, 16.5, -16.5, 16.5, 16.5, -16.5, 16.5)
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8.096409, 32.000084, 1.1566277, 0, 4.4608307, -1.2745228, 8.096405, 8.096405, 16.5, 16.5, -16.5, 16.5)
+4:0/0 = 0
+
+[resource]
+tile_size = Vector2i(33, 33)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_jcm55")
