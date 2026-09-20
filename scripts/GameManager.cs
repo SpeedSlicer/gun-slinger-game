@@ -6,7 +6,7 @@ public partial class GameManager : Node2D
 {
 	public int score = 0;
 	static int length = 4;
-	const double game_time = 20;
+	const double game_time = 60;
 	const int startAmountGoose = 3;
 	public static int lastScore = 0, bestScore = 0;
 	Node2D[] nodes = new Node2D[length];
