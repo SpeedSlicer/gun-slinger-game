@@ -17,3 +17,19 @@ texture = ExtResource("1_fh0yl")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1251302648]
 position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_ou60p")
+
+[node name="Time" type="RichTextLabel" parent="." unique_id=1832493078]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -40.5
+offset_right = 181.0
+offset_bottom = -9.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Top Score:"
+fit_content = true
+horizontal_alignment = 1
