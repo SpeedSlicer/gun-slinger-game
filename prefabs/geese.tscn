@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://h0xfsr7rytf2"]
+
+[ext_resource type="Script" uid="uid://cltq1kr38sejh" path="res://scripts/Geese.cs" id="1_pjau5"]
+[ext_resource type="SpriteFrames" uid="uid://bna8vnjjxs7jo" path="res://sprites/geese/geese.tres" id="2_xjxbm"]
+[ext_resource type="Texture2D" uid="uid://c11nw7l4lqdjp" path="res://sprites/blood_particle.png" id="3_act0v"]
+[ext_resource type="Material" uid="uid://v3yb68sv380v" path="res://sprites/bloodparticle.tres" id="4_njiul"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_400sg"]
+radius = 9.5
+height = 28.0
+
+[node name="Geese" type="CharacterBody2D" unique_id=95994027]
+collision_layer = 4
+up_direction = Vector2(0, 1)
+floor_stop_on_slope = false
+floor_constant_speed = true
+floor_max_angle = 3.0072024
+floor_snap_length = 32.0
+safe_margin = 0.01
+script = ExtResource("1_pjau5")
+runDistance = 100.0
+walkDistance = 250.0
+runSpeed = 150.0
+walkSpeed = 100.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1607663265]
+sprite_frames = ExtResource("2_xjxbm")
+animation = &"flap"
+frame_progress = 0.7832105
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=205302834]
+position = Vector2(-0.5, 2)
+shape = SubResource("CapsuleShape2D_400sg")
+
+[node name="Particles" type="GPUParticles2D" parent="." unique_id=1923757863]
+emitting = false
+amount = 60
+texture = ExtResource("3_act0v")
+lifetime = 4.75
+one_shot = true
+explosiveness = 1.0
+trail_lifetime = 2.0799999999999996
+process_material = ExtResource("4_njiul")

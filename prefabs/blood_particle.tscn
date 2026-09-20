@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b616krjp64hfj"]
+
+[ext_resource type="Texture2D" uid="uid://c11nw7l4lqdjp" path="res://sprites/blood_particle.png" id="1_5s663"]
+[ext_resource type="Material" uid="uid://v3yb68sv380v" path="res://sprites/bloodparticle.tres" id="2_eg6qb"]
+
+[node name="Blood" type="Node2D" unique_id=2110810525]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1641882700]
+emitting = false
+amount = 60
+texture = ExtResource("1_5s663")
+lifetime = 4.75
+one_shot = true
+explosiveness = 1.0
+trail_lifetime = 2.0799999999999996
+process_material = ExtResource("2_eg6qb")
