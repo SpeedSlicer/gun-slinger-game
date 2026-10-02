@@ -63,7 +63,7 @@ floor_max_angle = 1.3962634
 floor_snap_length = 12.0
 safe_margin = 0.001
 script = ExtResource("1_qbsmt")
-Speed = 150.0
+Speed = 250.0
 JumpVelocity = -250.0
 armPosLeft = Vector2(1, 5)
 
@@ -126,8 +126,23 @@ tile_map_data = PackedByteArray("AAADAAAAAAACAAAAAAAEAP//AAACAAAAAAAFAP7/AAACAAA
 tile_set = SubResource("TileSet_s0nni")
 
 [node name="GameManager" type="Node2D" parent="." unique_id=1489921498]
-position = Vector2(-1, 0)
+position = Vector2(-1, 2)
 script = ExtResource("8_g4kob")
+
+[node name="Point9" type="Node2D" parent="GameManager" unique_id=1372146209]
+position = Vector2(-596, -218)
+
+[node name="Point8" type="Node2D" parent="GameManager" unique_id=180944192]
+position = Vector2(-257, -149)
+
+[node name="Point7" type="Node2D" parent="GameManager" unique_id=825961676]
+position = Vector2(221, -122)
+
+[node name="Point6" type="Node2D" parent="GameManager" unique_id=1665687301]
+position = Vector2(385, -211)
+
+[node name="Point5" type="Node2D" parent="GameManager" unique_id=960128091]
+position = Vector2(717, -244)
 
 [node name="Point4" type="Node2D" parent="GameManager" unique_id=1641842162]
 position = Vector2(581, -209)

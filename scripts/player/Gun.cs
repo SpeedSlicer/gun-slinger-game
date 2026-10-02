@@ -36,7 +36,7 @@ public partial class Gun : Node2D
 			timer.Start(Cooldown);
 			var bullet = Bullet.Instantiate<Bullet>();
 			bullet.Position = firepoint.GetGlobalPosition();
-			bullet.Rotation = Rotation * visuals.Scale.X;
+			bullet.Rotation = Rotation;
 			bullet.direction = -direction;
 			bullet.speed =BulletSpeed;
 			bullet.lifetime = Lifetime;

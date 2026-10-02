@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 public partial class GameManager : Node2D
 {
 	public int score = 0;
-	static int length = 4;
+	static int length = 9;
 	const double game_time = 60;
-	const int startAmountGoose = 3;
+	const int startAmountGoose = 20;
 	public static int lastScore = 0, bestScore = 0;
 	Node2D[] nodes = new Node2D[length];
 	public readonly PackedScene goose = ResourceLoader.Load<PackedScene>("res://prefabs/geese.tscn");
